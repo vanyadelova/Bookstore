@@ -108,6 +108,19 @@ form > .button:hover {
 	left: 0;
 }
 
+.back .btn{
+    display: flex;
+    float: left!important;
+    margin-top: 50px!important;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.back{
+    padding-top: 100px;
+}
+
 /* front pane, placed above back */
 .front {
 	z-index: 2;
