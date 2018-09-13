@@ -29,7 +29,6 @@ function printBooks(data) {
     data.forEach(function (book) {
 
         template += `
-
         <div class = "flip-container" ontouchstart="this.classList.toggle('hover');">
             <div class = "flipper">
                 <div class = "front">
@@ -38,7 +37,7 @@ function printBooks(data) {
                 <div class="back container">
                     <h2>${book.title}</h2>
                     <span>${book.description}</span>
-                    <a data-fancybox="gallery" href="${book.detail}"><button class="btn">More Info</button></a>
+                    <a data-fancybox="images" href="${book.detail}"><button class="btn">More Info</button></a>
                 </div>
             </div>
         </div>
