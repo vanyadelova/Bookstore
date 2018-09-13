@@ -1,6 +1,6 @@
 
 body {
-  background-image: url("v4Qykv.png") !important; center center fixed;
+  background-image: url("v4Qykv.png") !important; 
 /*
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -11,6 +11,9 @@ body {
   font-family: 'Roboto', Tahoma, Arial, sans-serif;
   line-height: 1.5;
   font-size: 13px;
+     background-repeat: no-repeat;
+    background-attachment: fixed;
+   
 }
 
 form {
@@ -128,3 +131,4 @@ form > .button:hover {
 .btn {
    background-color: darkorange;
 }
+

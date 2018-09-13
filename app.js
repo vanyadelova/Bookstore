@@ -1,3 +1,5 @@
+let bookDB;
+
 getData();
 
 function getData() {
@@ -6,7 +8,7 @@ function getData() {
         .then(response => response.json())
 
         .then((jsonData) => {
-
+            bookDB = jsonData.books;
             var data = jsonData;
 
             printBooks(data.books);
@@ -47,3 +49,22 @@ function printBooks(data) {
     })
     document.getElementById("books").innerHTML = template;
 }
+
+
+function doSearch(e){
+    // Declare variables
+    var input, filter, ul, li, a, i;
+    input = document.getElementById('books');
+    filter = document.getElementById("search").value.toUpperCase();
+    console.log(filter);
+    
+    let res = bookDB.filter((book)=>{return JSON.stringify(book).toUpperCase().includes(filter) >0})
+    console.log(res);
+    
+    printBooks(res)
+    
+
+}
+    
+
+
