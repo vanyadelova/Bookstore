@@ -86,11 +86,6 @@ form > .button:hover {
     width: 100%;
 }
 
-.back {
-    background-color: burlywood;
-}
-
-
 /* flip speed goes here */
 .flipper {
 	transition: 0.6s;
@@ -102,24 +97,21 @@ form > .button:hover {
 /* hide back of pane during swap */
 .front, .back {
 	backface-visibility: hidden;
-
 	position: absolute;
 	top: 0;
 	left: 0;
 }
 
-.back .btn{
+.back {
     display: flex;
-    float: left!important;
-    margin-top: 50px!important;
+    flex-direction: column;
+/*    margin-top: 50px!important;*/
     align-items: center;
-    justify-content: center;
-    
+    justify-content: space-around;
+/*    padding-top: 100px;*/
+    background-color: burlywood;
 }
 
-.back{
-    padding-top: 100px;
-}
 
 /* front pane, placed above back */
 .front {
