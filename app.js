@@ -50,9 +50,9 @@ function printBooks(data) {
 }
 
 
-function doSearch(e){
+function doSearch(){
     // Declare variables
-    var input, filter, ul, li, a, i;
+//    var input, filter, ul, li, a, i;
     input = document.getElementById('books');
     filter = document.getElementById("search").value.toUpperCase();
     console.log(filter);
